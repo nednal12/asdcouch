@@ -104,19 +104,7 @@
 				 
 				 <li>
 				 	<a href="#jsonData" id="jsonBtn" data-transition="slide">
-				 		<h3>JSON</h3>
-				 	</a>
-				 </li>
-				 
-				 <li>
-				 	<a href="#xmlData" id="xmlBtn" data-transition="slide">
-				 		<h3>XML</h3>
-				 	</a>
-				 </li>
-				 
-				 <li>
-				 	<a href="#wddxData" id="wddxBtn" data-transition="slide">
-				 		<h3>WDDX</h3>
+				 		<h3>CouchDB Button</h3>
 				 	</a>
 				 </li>
 				 
@@ -341,7 +329,7 @@
 					<label for="carMileage">* Approximate Mileage:</label>
 					<input type="number" id="carMileage" name="Mileage:" min="1000" max="300000" step="5000" data-mini="true" class="required number"/>
 					
-					<fieldset data-role="controlgroup" data-mini="true">
+					<fieldset data-role="controlgroup" id="transSet" data-mini="true">
 						<legend>Transmission:</legend>
 						
 							<input type="radio" checked="checked" value="Automatic" id="automatic" name="Transmission:" />
@@ -382,10 +370,9 @@
 				<textarea id="comments" name="Comments:" data-mini="true" placeholder="Reminders, areas of concern, etc.." ></textarea>
 				
 			</fieldset>
-			<input id="saveIt" type="submit" value="Save Vehicle Info" data-theme="e"/>
+			<input id="saveIt" type="submit" value="Save Vehicle Info" />
 			
-			<input id="resetForm" type="reset" data-inline="true" value="Reset Form" data-theme="a"/>
-			<input id="clearLocal" type="button" data-inline="true" value="Clear Local Storage" data-theme="a"/>
+			
 		</form>
 
 		</div>

@@ -1,6 +1,8 @@
 function (doc) {
   if(doc._id.substr(0,9) === "Customer:") {
     emit(doc._id, {
+    	"id":doc._id,
+    	"rev":doc._rev,
     	"owner":doc.owner,
     	"make":doc.make,
     	"model":doc.model,
